@@ -12,7 +12,7 @@ pipeline{
       }
       stage('Build'){
         steps{
-          sh 'gradle build'
+          sh '/opt/gradle/gradle-8.0.2/bin/gradle build'
         }
       }
       stage('Run Application'){
