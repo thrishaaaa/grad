@@ -1,0 +1,11 @@
+trigger:
+- main
+pool:
+  name: Default
+steps:
+- script: echo 'single line run application'
+  displayName: 'My first gradle application'
+- script: /opt/gradle/gradle-8.0.2/bin/gradle build
+  displayName: 'Build'
+- script: gradle run
+  displayName: 'Run Application'
